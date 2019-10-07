@@ -18,11 +18,10 @@ export class OrderService {
 	}
 
 	fetchOrderTotal(order){
-        let product = 0;
-		for(let products of order.products){
-          product += products.orderPrice;
-          console.log(products);
-        }
-        return product;
+        	let product = 0;
+			for(let products of order.products){
+          			product += products.orderPrice;
+        		}
+        	return product;
 	}
 }
